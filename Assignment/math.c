@@ -28,15 +28,36 @@
  math(10,2,'/'); This code will return '5'
  math(10,7,'%'); This code will return '3'
  
- DEPENDENCIES:
- RELIES ONLY ON STDIO.H AND STDLIB.H FOR I/O CAPABILITIES
+ TO USE: ADD '#include "math.h" ' to your program 
+ 
+ PLEASE VIEW MATH.H FOR FURTHER DOCUMENTATION
  
 */
 
-#ifndef MATH_H_
-#define MATH_H_
 
 
-int math(int num1, int num2, char Operator); //prototype for math function
+#include "math.h"
+#include <stdlib.h>
+#include <stdio.h>
 
-#endif /* MATH_H_ */
+int math (int num1, int num2, char operator) {
+    if (operator=='+') {
+        return num1+num2;
+    }
+    else if (operator=='-') {
+        return num1-num2;
+    }
+    else if (operator=='*') {
+        return num1*num2;
+    }
+    else if (operator=='/') {
+        return num1/num2;
+    }
+    else if (operator=='%') {
+        
+        return (num1-(num2*(num1/num2)));
+    }
+    else{
+        printf("Operator not recognized"); //error handler
+    }
+}
