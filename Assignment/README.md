@@ -3,7 +3,7 @@
 ### Author: Brendan Nugent
 
 ## Overview
-The math function is a multi-purpose function possessing addition(+), subtraction(-), multiplication(*), division(/) and modulus(%) capabilities. It is intended to be used in a simple, efficient program which requires only integer math.
+The math function is a multi-purpose function possessing addition(+), subtraction(-), multiplication(*), division(/) and modulus(%) capabilities. It is intended to be used in a simple, efficient program which requires only integer math. Non-integer numbers will corrupt the function.
 ## Dependencies
 The function depends on its own header file, math.h. To use the math function enter the following at the beginning of your program:
 
